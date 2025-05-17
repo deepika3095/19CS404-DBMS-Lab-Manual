@@ -122,16 +122,13 @@ icom_id TEXT CHECK (LENGTH(icom_id)=4),
 FOREIGN KEY (icom_id) REFERENCES company (com_id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 ```
-
 **Output:**
-
 ![image](https://github.com/user-attachments/assets/1774f61b-0ad2-42ac-bc90-d6898da90d77)
 
 **Question 2**
 ---
 Insert all books from Out_of_print_books into Books
 Table attributes are ISBN, Title, Author, Publisher, YearPublished
-
 ```sql
 INSERT INTO Books (ISBN, Title, Author, Publisher, YearPublished)
 SELECT ISBN, Title, Author, Publisher, YearPublished FROM Out_of_print_books;
