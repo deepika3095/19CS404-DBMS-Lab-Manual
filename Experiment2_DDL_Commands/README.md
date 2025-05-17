@@ -136,22 +136,17 @@ Table attributes are ISBN, Title, Author, Publisher, YearPublished
 INSERT INTO Books (ISBN, Title, Author, Publisher, YearPublished)
 SELECT ISBN, Title, Author, Publisher, YearPublished FROM Out_of_print_books;
 ```
-
 **Output:**
-
 ![image](https://github.com/user-attachments/assets/05087595-b4ac-48de-8a33-521e17655bcf)
 
 **Question 3**
 ---
 Write a SQL query to Add a new column Country as text in the Student_details table.
 Sample table: Student_details
-
 ```sql
 ALTER TABLE Student_details ADD Country TEXT;
 ```
-
 **Output:**
-
 ![image](https://github.com/user-attachments/assets/38ef77ff-2e53-49c0-bedf-dfb45a5792d0)
 
 **Question 4**
@@ -160,7 +155,6 @@ Create a table named Locations with the following columns:
 - LocationID as INTEGER
 - LocationName as TEXT
 - Address as TEXT
-
 ```sql
 CREATE TABLE Locations(
 LocationID INTEGER,
@@ -168,20 +162,15 @@ LocationName TEXT,
 Address TEXT
 );
 ```
-
 **Output:**
-
 ![image](https://github.com/user-attachments/assets/84a70964-fbd7-40c4-b3c1-9c911755227a)
-
 
 **Question 5**
 Insert a book with ISBN 978-1234567890, Title Data Science Essentials, Author Jane Doe, Publisher TechBooks, and Year 2024 into the Books table.
-
 ```sql
 INSERT INTO Books (ISBN,Title,Author,Publisher,Year)
 VALUES ('978-1234567890','Data Science Essentials','Jane Doe','TechBooks',2024);
 ```
-
 **Output:**
 
 ![image](https://github.com/user-attachments/assets/a8b66909-54eb-4230-8331-75d1d019d542)
@@ -196,9 +185,7 @@ VALUES (205,'Olivia Green','F',NULL,NULL),
 (207,'Liam Smith','M','Mathematics',85),
 (208,'Sophia Johnson','F','Science',NULL);
 ```
-
 **Output:**
-
 ![image](https://github.com/user-attachments/assets/3df68d8f-9f18-477e-a9e8-396c3d78ff85)
 
 **Question 7**
@@ -209,7 +196,6 @@ Create a table named Bonuses with the following constraints:
 - BonusAmount as REAL should be greater than 0.
 - BonusDate as DATE.
 - Reason as TEXT should not be NULL.
-
 ```sql
 CREATE TABLE Bonuses(
 BonusID INT PRIMARY KEY,
@@ -221,9 +207,7 @@ FOREIGN KEY (EmployeeID) REFERENCES Employees (EmployeeID),
 CHECK (BonusAmount>0)
 );
 ```
-
 **Output:**
-
 ![image](https://github.com/user-attachments/assets/1968df0f-cc32-4e01-886e-77891ce00096)
 
 **Question 8**
